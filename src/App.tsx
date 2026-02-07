@@ -19,6 +19,10 @@ function App() {
     const { isFirstVisit, userData } = useValentine();
 
     const renderDayContent = () => {
+        if (currentDay > unlockedDay) {
+            return <LockedScreen dayId={currentDay} />;
+        }
+
         switch (currentDay) {
             case 7: return <RoseDay />;
             case 8: return <ProposeDay />;
