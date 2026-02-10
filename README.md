@@ -1,0 +1,1 @@
+This is testing of trigger if SCM of Jenkins is working or not.
